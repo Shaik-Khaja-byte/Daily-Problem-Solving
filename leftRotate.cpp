@@ -19,6 +19,11 @@ void leftRotate(vector<int>& vec, int n, int k){
     }
 }
 
+/*
+if you want to do the same operation but by rotating it by right... you can do sso by following the same 
+pattern byt the logic will be changed, although there will be no effect on time ot space complexity
+*/
+
 int main(){
     vector<int> vec = {1, 2, 3, 4, 5, 6, 7};
     int n = vec.size();
