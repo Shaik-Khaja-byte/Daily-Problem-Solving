@@ -12,6 +12,8 @@ int main(){
     }
 
     sort(vec.begin(), vec.end(), [&](int a, int b){
+        // cout << "selected: (" << a << ", " << b << ")" << endl;
+
         bool ina = rank.count(a); // check the counts of each element, if it's more than 1 -> casted to true else false
         bool inb = rank.count(b);
 
@@ -32,3 +34,29 @@ int main(){
 
     return 0;
 }
+
+/*
+
+NOTE FOR CURIOUS LEARNERS
+
+while tracing this algo, I hit the fudamental doubt, 
+How does the inbuilt sort function select the two elements from an array?
+
+sequentially? WRONG!
+
+the truth is - it's totally random based on compiler, STL Implementation, array size, recursion depth
+
+then which algorithm does it use internally?
+Intro Sort - a combination of quick, heap and insertion sort, that's why the selection is totally random
+
+Many interviewers ask:
+How many times does std::sort() call the comparator?
+
+The answer is not fixed.
+
+It depends on the implementation, but on average it's about O(n log n) comparisons. 
+For an array of 1000 elements, the comparator might be called around 10,000–15,000 times.
+
+to actually check how many comparisions it makes: add a print statement (uncomment it to see it in action)
+
+*/
