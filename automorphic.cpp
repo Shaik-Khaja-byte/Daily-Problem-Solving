@@ -35,4 +35,11 @@ int main() {
     }
 
     return 0;
+
+    /*
+    NOTE:
+    just realised, when you have count of the digits and you need to
+    extract the same number of digits from another number just raise 10^count
+    and directly do the operation ((n * n) % power == n)
+    */
 }
