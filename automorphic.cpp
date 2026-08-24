@@ -41,5 +41,8 @@ int main() {
     just realised, when you have count of the digits and you need to
     extract the same number of digits from another number just raise 10^count
     and directly do the operation ((n * n) % power == n)
+
+    THE CONCEPT:
+    If you want the last digit of n, n % 10,          if you want the last two digits of n, n % 100,     similarly, last 3 digits, n % 1000.
     */
 }
