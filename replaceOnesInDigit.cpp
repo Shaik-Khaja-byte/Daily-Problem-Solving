@@ -11,7 +11,7 @@ int main() {
         if(digit == 1)
             digit = 0;
 
-        ans = ans + digit * place;
+        ans = ans + digit * place; //the idea is to multiply place (1 initially) and with each iteration grows by x10
 
         place *= 10;
         n /= 10;
